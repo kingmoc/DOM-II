@@ -93,6 +93,8 @@ navItemsText.forEach((value, index, nl) => {
 	})
 })
 
+// Resize Event
+window.addEventListener('resize', (event) => alert('Screen To Small'))
 
 
 
