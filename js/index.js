@@ -66,3 +66,15 @@ let images = document.querySelector('.img-content')
 images.addEventListener('dblclick', (event) => {
 	event.srcElement.style.display = 'none'
 })
+
+//  Copy Event
+let textP = document.querySelector('p')
+console.log(textP)
+textP.addEventListener('copy', (event) => {
+	console.log(event)
+	event.preventDefault()
+	alert('Sorry Cannot Copy Text Here!')
+})
+
+
+
