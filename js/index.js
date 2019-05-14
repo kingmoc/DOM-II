@@ -39,7 +39,7 @@ function busTextBox() {
 }
 
 // KeyDown Event
-document.addEventListener('keydown', (event) => alert("Please stop Pressing Keys!"))
+// document.addEventListener('keydown', (event) => alert("Please stop Pressing Keys!"))
 
 // Wheel Event 
 document.addEventListener('wheel', (event) => {
@@ -54,7 +54,7 @@ console.log(id)
 
 function loadBackground() {
 	window.addEventListener('load', (event) => {
-		console.log(event.srcElement.bgColor = 'lightgrey'); 
+		event.srcElement.bgColor = 'lightgrey'; 
 		// alert("Welcome to the Fun Bus Project")
 		clearInterval(id)
 	}) 
@@ -80,7 +80,11 @@ textP.addEventListener('copy', (event) => {
 let button = document.querySelector('.btn')
 button.addEventListener('click', (event) => alert('This button isnt quite ready!'))
 
+// Resize Event
+window.addEventListener('resize', (event) => alert('Screen To Small'))
 
+// Keyup Event 
+document.addEventListener('keyup', (event) => event.srcElement.bgColor = 'lightgreen') 
 
 // Prevent Nav Reload
 let navItemsText = document.querySelectorAll('a')
@@ -93,8 +97,7 @@ navItemsText.forEach((value, index, nl) => {
 	})
 })
 
-// Resize Event
-window.addEventListener('resize', (event) => alert('Screen To Small'))
+
 
 
 
