@@ -76,5 +76,16 @@ textP.addEventListener('copy', (event) => {
 	alert('Sorry Cannot Copy Text Here!')
 })
 
+// Prevent Nav Reload
+let navItemsText = document.querySelectorAll('a')
+console.log(navItemsText)
+
+navItemsText.forEach((value, index, nl) => {
+	value.addEventListener('click', (event) => {
+		console.log(event)
+		event.preventDefault()
+	})
+})
+
 
 
