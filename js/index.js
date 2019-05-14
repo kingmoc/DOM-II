@@ -59,5 +59,10 @@ function loadBackground() {
 		clearInterval(id)
 	}) 
 }
-
 loadBackground()
+
+// Double Click Event
+let images = document.querySelector('.img-content')
+images.addEventListener('dblclick', (event) => {
+	event.srcElement.style.display = 'none'
+})
