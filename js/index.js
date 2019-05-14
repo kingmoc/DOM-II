@@ -76,6 +76,12 @@ textP.addEventListener('copy', (event) => {
 	alert('Sorry Cannot Copy Text Here!')
 })
 
+// Click Event
+let button = document.querySelector('.btn')
+button.addEventListener('click', (event) => alert('This button isnt quite ready!'))
+
+
+
 // Prevent Nav Reload
 let navItemsText = document.querySelectorAll('a')
 console.log(navItemsText)
@@ -86,6 +92,8 @@ navItemsText.forEach((value, index, nl) => {
 		event.preventDefault()
 	})
 })
+
+
 
 
 
