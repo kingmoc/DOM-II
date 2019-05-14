@@ -78,7 +78,12 @@ textP.addEventListener('copy', (event) => {
 
 // Click Event
 let button = document.querySelector('.btn')
-button.addEventListener('click', (event) => alert('This button isnt quite ready!'))
+button.addEventListener('click', (event) => {
+	alert('This button isnt quite ready!')
+	event.stopPropagation()
+})
+
+window.addEventListener('click', (event) => alert('This belongs to the Window'))
 
 // Resize Event
 window.addEventListener('resize', (event) => alert('Screen To Small'))
